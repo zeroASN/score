@@ -22,11 +22,11 @@ public class Score {
     private String sno;
 
     //语文成绩
-    private Integer Chinese;
+    private String chinese;
 
     //数学成绩
-    private Integer Math;
+    private String math;
 
     //英语成绩
-    private String English;
+    private String english;
 }

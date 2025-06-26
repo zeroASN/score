@@ -2,7 +2,6 @@ package cn.edu.ctbu.scoremg.api;
 
 import cn.edu.ctbu.scoremg.constant.REnum;
 import cn.edu.ctbu.scoremg.entity.Score;
-import cn.edu.ctbu.scoremg.entity.Student;
 import cn.edu.ctbu.scoremg.exception.RException;
 import cn.edu.ctbu.scoremg.service.ScoreService;
 import cn.edu.ctbu.scoremg.util.RUtil;

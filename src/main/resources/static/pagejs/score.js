@@ -146,9 +146,9 @@ layui.use(function () {
                 width: 150,
 
             },
-            {field: 'Chinese', width: 100, title: '语文成绩', sort: true},
-            {field: 'Math', width: 100, title: '数学成绩', sort: true},
-            {field: 'English', width: 100, title: '英语成绩', sort: true},
+            {field: 'chinese', title: '语文成绩', sort: true},
+            {field: 'math', title: '数学成绩', sort: true},
+            {field: 'english', title: '英语成绩', sort: true},
 
             {field: 'right', title: '操作', width: 134, minWidth: 125, templet: '#editTemplate'}
         ]],
