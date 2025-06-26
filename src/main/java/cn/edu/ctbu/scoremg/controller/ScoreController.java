@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/Score")
+@RequestMapping("/score")
 public class ScoreController {
 
     @Autowired
@@ -16,6 +16,6 @@ public class ScoreController {
     @GetMapping("/list2")
     public String getList() {
 
-        return "/Score/list2";
+        return "/score/list2";
     }
 }
