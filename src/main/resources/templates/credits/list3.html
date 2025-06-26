@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>学生成绩管理</title>
+  <title>学生学分管理</title>
   <link rel="stylesheet" href="/component/layui/css/layui.css">
 
   <link rel="stylesheet" href="/css/dp01.css">
@@ -15,7 +15,7 @@
     <div class="layui-col-xs12">
 
 
-      <h1 style="text-align: center">学生成绩管理</h1>
+      <h1 style="text-align: center">学生学分管理</h1>
 
     </div>
 
@@ -27,7 +27,7 @@
 
       <div class="layui-row">
         <button type="button" class="layui-btn layui-btn-sm layui-btn-normal"
-                onclick="showScoreDlg();return false;">
+                onclick="showCreditsDlg();return false;">
 
           <i class="layui-icon layui-icon-addition" ></i>
         </button>
@@ -59,25 +59,25 @@
             </li>
             <li class="layui-input-group">
               <div class="layui-input-prefix">
-                语文成绩
+                专业核心课
               </div>
-              <input type="text" placeholder="语文成绩" class="layui-input" name="chinese">
+              <input type="text" placeholder="专业核心课" class="layui-input" name="professional_core">
 
             </li>
 
             <li class="layui-input-group">
               <div class="layui-input-prefix">
-                数学成绩
+                专业拓展课
               </div>
-              <input type="text" placeholder="数学成绩" class="layui-input" name="math">
+              <input type="text" placeholder="专业拓展课" class="layui-input" name="professional_development">
 
             </li>
 
             <li class="layui-input-group">
               <div class="layui-input-prefix">
-                英语成绩
+                通识选修课
               </div>
-              <input type="text" placeholder="英语成绩" class="layui-input" name="english">
+              <input type="text" placeholder="通识选修课" class="layui-input" name="general_education">
 
             </li>
 
@@ -103,7 +103,7 @@
   <div class="layui-row">
     <div class="layui-col-xs12">
 
-      <table class="layui-hide" id="tbScore" lay-filter="tbScore"></table>
+      <table class="layui-hide" id="tbCredits" lay-filter="tbCredits"></table>
 
     </div>
 
@@ -121,7 +121,7 @@
 
 <div id="popDlg" style="display: none;">
 
-  <form class="layui-form dlgcontainer" id="scoreForm" >
+  <form class="layui-form dlgcontainer" id="creditsForm" >
     <div class="demo-reg-container">
       <div class="layui-form-item" id="formId">
         <div class="layui-row">
@@ -161,7 +161,7 @@
           <div class="layui-input-prefix">
             <i class="layui-icon layui-icon-vercode"></i>
           </div>
-          <input type="text" name="chinese" value="" lay-verify="required" placeholder="语文成绩" autocomplete="off" class="layui-input">
+          <input type="text" name="professional_core" value="" lay-verify="required" placeholder="专业核心课" autocomplete="off" class="layui-input">
         </div>
       </div>
 
@@ -170,7 +170,7 @@
           <div class="layui-input-prefix">
             <i class="layui-icon layui-icon-vercode"></i>
           </div>
-          <input type="text" name="math" value="" lay-verify="required" placeholder="数学成绩" autocomplete="off" class="layui-input">
+          <input type="text" name="professional_development" value="" lay-verify="required" placeholder="专业拓展课" autocomplete="off" class="layui-input">
         </div>
       </div>
 
@@ -179,7 +179,7 @@
           <div class="layui-input-prefix">
             <i class="layui-icon layui-icon-vercode"></i>
           </div>
-          <input type="text" name="english" value="" lay-verify="required" placeholder="英语成绩" autocomplete="off" class="layui-input">
+          <input type="text" name="general_education" value="" lay-verify="required" placeholder="通识选修课" autocomplete="off" class="layui-input">
         </div>
       </div>
 
@@ -196,6 +196,6 @@
 <script src="/component/layui/layui.js"></script>
 
 
-<script src="/pagejs/score.js"></script>
+<script src="/pagejs/credits.js"></script>
 </body>
 </html>

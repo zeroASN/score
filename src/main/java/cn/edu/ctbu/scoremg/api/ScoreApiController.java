@@ -28,7 +28,7 @@ public class ScoreApiController {
     }
 
     @GetMapping("/{id}")
-    public R<Score> findByid(@PathVariable int id) {
+    public R<Score> findById(@PathVariable int id) {
         Score score = scoreService.findById(id);
         return RUtil.success(score);
     }

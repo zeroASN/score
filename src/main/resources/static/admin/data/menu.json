@@ -12,6 +12,22 @@
 				"type": 1,
 				"openType": "_component",
 				"href": "/student/list"
+			},
+			{
+				"id": "10",
+				"title": "成绩管理",
+				"icon": "layui-icon layui-icon-console",
+				"type": 1,
+				"openType": "_component",
+				"href": "/score/list2"
+			},
+			{
+				"id": "10",
+				"title": "学分管理",
+				"icon": "layui-icon layui-icon-console",
+				"type": 1,
+				"openType": "_component",
+				"href": "/credits/list3"
 			}
 
 		]
